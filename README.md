@@ -1,2 +1,2 @@
-# UludagOtomasyon2
- Otomasyon Uygulaması
+# Uludağ Üniversitesi Otomasyon Uygulaması
+

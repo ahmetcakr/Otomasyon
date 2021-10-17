@@ -59,14 +59,14 @@ namespace UludagOtomasyon2
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_sifreİsim = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_eskiSifre = new System.Windows.Forms.TextBox();
-            this.txt_yeniSifre = new System.Windows.Forms.TextBox();
-            this.txt_yeniSifreTekrar = new System.Windows.Forms.TextBox();
-            this.lbl_eskiSifre = new System.Windows.Forms.Label();
-            this.lbl_yeniSifre = new System.Windows.Forms.Label();
-            this.lbl_yeniSifreTekrar = new System.Windows.Forms.Label();
-            this.btn_sifreKaydet = new System.Windows.Forms.Button();
             this.btn_vazgecSifre = new System.Windows.Forms.Button();
+            this.btn_sifreKaydet = new System.Windows.Forms.Button();
+            this.lbl_yeniSifreTekrar = new System.Windows.Forms.Label();
+            this.lbl_yeniSifre = new System.Windows.Forms.Label();
+            this.lbl_eskiSifre = new System.Windows.Forms.Label();
+            this.txt_yeniSifreTekrar = new System.Windows.Forms.TextBox();
+            this.txt_yeniSifre = new System.Windows.Forms.TextBox();
+            this.txt_eskiSifre = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -102,27 +102,27 @@ namespace UludagOtomasyon2
             // bölümBilgileriToolStripMenuItem
             // 
             this.bölümBilgileriToolStripMenuItem.Name = "bölümBilgileriToolStripMenuItem";
-            this.bölümBilgileriToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.bölümBilgileriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bölümBilgileriToolStripMenuItem.Text = "Bölüm Bilgileri";
             this.bölümBilgileriToolStripMenuItem.Click += new System.EventHandler(this.bölümBilgileriToolStripMenuItem_Click);
             // 
             // özlükBilgileriToolStripMenuItem
             // 
             this.özlükBilgileriToolStripMenuItem.Name = "özlükBilgileriToolStripMenuItem";
-            this.özlükBilgileriToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.özlükBilgileriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.özlükBilgileriToolStripMenuItem.Text = "Özlük Bilgileri";
             this.özlükBilgileriToolStripMenuItem.Click += new System.EventHandler(this.özlükBilgileriToolStripMenuItem_Click);
             // 
             // şifreDeğiştirmeToolStripMenuItem
             // 
             this.şifreDeğiştirmeToolStripMenuItem.Name = "şifreDeğiştirmeToolStripMenuItem";
-            this.şifreDeğiştirmeToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.şifreDeğiştirmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.şifreDeğiştirmeToolStripMenuItem.Text = "Şifre Değiştirme";
             // 
             // hESKoduToolStripMenuItem
             // 
             this.hESKoduToolStripMenuItem.Name = "hESKoduToolStripMenuItem";
-            this.hESKoduToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.hESKoduToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hESKoduToolStripMenuItem.Text = "HES Kodu";
             this.hESKoduToolStripMenuItem.Click += new System.EventHandler(this.hESKoduToolStripMenuItem_Click);
             // 
@@ -150,6 +150,7 @@ namespace UludagOtomasyon2
             this.dersAlmaToolStripMenuItem.Name = "dersAlmaToolStripMenuItem";
             this.dersAlmaToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.dersAlmaToolStripMenuItem.Text = "Ders Alma";
+            this.dersAlmaToolStripMenuItem.Click += new System.EventHandler(this.dersAlmaToolStripMenuItem_Click);
             // 
             // dersProgramıToolStripMenuItem
             // 
@@ -157,6 +158,7 @@ namespace UludagOtomasyon2
             this.dersProgramıToolStripMenuItem.Name = "dersProgramıToolStripMenuItem";
             this.dersProgramıToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.dersProgramıToolStripMenuItem.Text = "Ders Programı";
+            this.dersProgramıToolStripMenuItem.Click += new System.EventHandler(this.dersProgramıToolStripMenuItem_Click);
             // 
             // dönemDersleriToolStripMenuItem
             // 
@@ -164,6 +166,7 @@ namespace UludagOtomasyon2
             this.dönemDersleriToolStripMenuItem.Name = "dönemDersleriToolStripMenuItem";
             this.dönemDersleriToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.dönemDersleriToolStripMenuItem.Text = "Dönem Dersleri";
+            this.dönemDersleriToolStripMenuItem.Click += new System.EventHandler(this.dönemDersleriToolStripMenuItem_Click);
             // 
             // harçDurumuToolStripMenuItem
             // 
@@ -171,6 +174,7 @@ namespace UludagOtomasyon2
             this.harçDurumuToolStripMenuItem.Name = "harçDurumuToolStripMenuItem";
             this.harçDurumuToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.harçDurumuToolStripMenuItem.Text = "Harç Durumu";
+            this.harçDurumuToolStripMenuItem.Click += new System.EventHandler(this.harçDurumuToolStripMenuItem_Click);
             // 
             // krediKartıİleÖdemeToolStripMenuItem
             // 
@@ -178,6 +182,7 @@ namespace UludagOtomasyon2
             this.krediKartıİleÖdemeToolStripMenuItem.Name = "krediKartıİleÖdemeToolStripMenuItem";
             this.krediKartıİleÖdemeToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.krediKartıİleÖdemeToolStripMenuItem.Text = "Kredi Kartı İle Ödeme";
+            this.krediKartıİleÖdemeToolStripMenuItem.Click += new System.EventHandler(this.krediKartıİleÖdemeToolStripMenuItem_Click);
             // 
             // notKartıToolStripMenuItem
             // 
@@ -185,6 +190,7 @@ namespace UludagOtomasyon2
             this.notKartıToolStripMenuItem.Name = "notKartıToolStripMenuItem";
             this.notKartıToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.notKartıToolStripMenuItem.Text = "Not Kartı";
+            this.notKartıToolStripMenuItem.Click += new System.EventHandler(this.notKartıToolStripMenuItem_Click);
             // 
             // sınavSonuçlarıToolStripMenuItem
             // 
@@ -192,6 +198,7 @@ namespace UludagOtomasyon2
             this.sınavSonuçlarıToolStripMenuItem.Name = "sınavSonuçlarıToolStripMenuItem";
             this.sınavSonuçlarıToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.sınavSonuçlarıToolStripMenuItem.Text = "Sınav Sonuçları";
+            this.sınavSonuçlarıToolStripMenuItem.Click += new System.EventHandler(this.sınavSonuçlarıToolStripMenuItem_Click);
             // 
             // sınavlarToolStripMenuItem
             // 
@@ -199,6 +206,7 @@ namespace UludagOtomasyon2
             this.sınavlarToolStripMenuItem.Name = "sınavlarToolStripMenuItem";
             this.sınavlarToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.sınavlarToolStripMenuItem.Text = "Sınavlar";
+            this.sınavlarToolStripMenuItem.Click += new System.EventHandler(this.sınavlarToolStripMenuItem_Click);
             // 
             // stajBaşvurularıToolStripMenuItem
             // 
@@ -206,6 +214,7 @@ namespace UludagOtomasyon2
             this.stajBaşvurularıToolStripMenuItem.Name = "stajBaşvurularıToolStripMenuItem";
             this.stajBaşvurularıToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.stajBaşvurularıToolStripMenuItem.Text = "Staj Başvurularım";
+            this.stajBaşvurularıToolStripMenuItem.Click += new System.EventHandler(this.stajBaşvurularıToolStripMenuItem_Click);
             // 
             // stajBilgilerimiToolStripMenuItem
             // 
@@ -213,6 +222,7 @@ namespace UludagOtomasyon2
             this.stajBilgilerimiToolStripMenuItem.Name = "stajBilgilerimiToolStripMenuItem";
             this.stajBilgilerimiToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.stajBilgilerimiToolStripMenuItem.Text = "Staj Bilgileri Görüntüle";
+            this.stajBilgilerimiToolStripMenuItem.Click += new System.EventHandler(this.stajBilgilerimiToolStripMenuItem_Click);
             // 
             // duyuruToolStripMenuItem
             // 
@@ -329,48 +339,25 @@ namespace UludagOtomasyon2
             this.panel1.Size = new System.Drawing.Size(382, 271);
             this.panel1.TabIndex = 9;
             // 
-            // txt_eskiSifre
+            // btn_vazgecSifre
             // 
-            this.txt_eskiSifre.Location = new System.Drawing.Point(147, 56);
-            this.txt_eskiSifre.Name = "txt_eskiSifre";
-            this.txt_eskiSifre.Size = new System.Drawing.Size(129, 20);
-            this.txt_eskiSifre.TabIndex = 0;
+            this.btn_vazgecSifre.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_vazgecSifre.Location = new System.Drawing.Point(218, 215);
+            this.btn_vazgecSifre.Name = "btn_vazgecSifre";
+            this.btn_vazgecSifre.Size = new System.Drawing.Size(74, 30);
+            this.btn_vazgecSifre.TabIndex = 2;
+            this.btn_vazgecSifre.Text = "Vazgeç";
+            this.btn_vazgecSifre.UseVisualStyleBackColor = true;
             // 
-            // txt_yeniSifre
+            // btn_sifreKaydet
             // 
-            this.txt_yeniSifre.Location = new System.Drawing.Point(147, 111);
-            this.txt_yeniSifre.Name = "txt_yeniSifre";
-            this.txt_yeniSifre.Size = new System.Drawing.Size(129, 20);
-            this.txt_yeniSifre.TabIndex = 0;
-            // 
-            // txt_yeniSifreTekrar
-            // 
-            this.txt_yeniSifreTekrar.Location = new System.Drawing.Point(147, 163);
-            this.txt_yeniSifreTekrar.Name = "txt_yeniSifreTekrar";
-            this.txt_yeniSifreTekrar.Size = new System.Drawing.Size(129, 20);
-            this.txt_yeniSifreTekrar.TabIndex = 0;
-            // 
-            // lbl_eskiSifre
-            // 
-            this.lbl_eskiSifre.AutoSize = true;
-            this.lbl_eskiSifre.BackColor = System.Drawing.Color.PowderBlue;
-            this.lbl_eskiSifre.Font = new System.Drawing.Font("Calisto MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_eskiSifre.Location = new System.Drawing.Point(78, 59);
-            this.lbl_eskiSifre.Name = "lbl_eskiSifre";
-            this.lbl_eskiSifre.Size = new System.Drawing.Size(68, 14);
-            this.lbl_eskiSifre.TabIndex = 1;
-            this.lbl_eskiSifre.Text = "Eski Şifre   :";
-            // 
-            // lbl_yeniSifre
-            // 
-            this.lbl_yeniSifre.AutoSize = true;
-            this.lbl_yeniSifre.BackColor = System.Drawing.Color.PowderBlue;
-            this.lbl_yeniSifre.Font = new System.Drawing.Font("Calisto MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_yeniSifre.Location = new System.Drawing.Point(77, 114);
-            this.lbl_yeniSifre.Name = "lbl_yeniSifre";
-            this.lbl_yeniSifre.Size = new System.Drawing.Size(71, 14);
-            this.lbl_yeniSifre.TabIndex = 1;
-            this.lbl_yeniSifre.Text = "Yeni Şifre   :";
+            this.btn_sifreKaydet.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sifreKaydet.Location = new System.Drawing.Point(126, 215);
+            this.btn_sifreKaydet.Name = "btn_sifreKaydet";
+            this.btn_sifreKaydet.Size = new System.Drawing.Size(74, 30);
+            this.btn_sifreKaydet.TabIndex = 2;
+            this.btn_sifreKaydet.Text = "Kaydet";
+            this.btn_sifreKaydet.UseVisualStyleBackColor = true;
             // 
             // lbl_yeniSifreTekrar
             // 
@@ -383,25 +370,48 @@ namespace UludagOtomasyon2
             this.lbl_yeniSifreTekrar.TabIndex = 1;
             this.lbl_yeniSifreTekrar.Text = "Yeni Şifre Tekrar   :";
             // 
-            // btn_sifreKaydet
+            // lbl_yeniSifre
             // 
-            this.btn_sifreKaydet.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sifreKaydet.Location = new System.Drawing.Point(126, 215);
-            this.btn_sifreKaydet.Name = "btn_sifreKaydet";
-            this.btn_sifreKaydet.Size = new System.Drawing.Size(74, 30);
-            this.btn_sifreKaydet.TabIndex = 2;
-            this.btn_sifreKaydet.Text = "Kaydet";
-            this.btn_sifreKaydet.UseVisualStyleBackColor = true;
+            this.lbl_yeniSifre.AutoSize = true;
+            this.lbl_yeniSifre.BackColor = System.Drawing.Color.PowderBlue;
+            this.lbl_yeniSifre.Font = new System.Drawing.Font("Calisto MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_yeniSifre.Location = new System.Drawing.Point(77, 114);
+            this.lbl_yeniSifre.Name = "lbl_yeniSifre";
+            this.lbl_yeniSifre.Size = new System.Drawing.Size(71, 14);
+            this.lbl_yeniSifre.TabIndex = 1;
+            this.lbl_yeniSifre.Text = "Yeni Şifre   :";
             // 
-            // btn_vazgecSifre
+            // lbl_eskiSifre
             // 
-            this.btn_vazgecSifre.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_vazgecSifre.Location = new System.Drawing.Point(218, 215);
-            this.btn_vazgecSifre.Name = "btn_vazgecSifre";
-            this.btn_vazgecSifre.Size = new System.Drawing.Size(74, 30);
-            this.btn_vazgecSifre.TabIndex = 2;
-            this.btn_vazgecSifre.Text = "Vazgeç";
-            this.btn_vazgecSifre.UseVisualStyleBackColor = true;
+            this.lbl_eskiSifre.AutoSize = true;
+            this.lbl_eskiSifre.BackColor = System.Drawing.Color.PowderBlue;
+            this.lbl_eskiSifre.Font = new System.Drawing.Font("Calisto MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_eskiSifre.Location = new System.Drawing.Point(78, 59);
+            this.lbl_eskiSifre.Name = "lbl_eskiSifre";
+            this.lbl_eskiSifre.Size = new System.Drawing.Size(68, 14);
+            this.lbl_eskiSifre.TabIndex = 1;
+            this.lbl_eskiSifre.Text = "Eski Şifre   :";
+            // 
+            // txt_yeniSifreTekrar
+            // 
+            this.txt_yeniSifreTekrar.Location = new System.Drawing.Point(147, 163);
+            this.txt_yeniSifreTekrar.Name = "txt_yeniSifreTekrar";
+            this.txt_yeniSifreTekrar.Size = new System.Drawing.Size(129, 20);
+            this.txt_yeniSifreTekrar.TabIndex = 0;
+            // 
+            // txt_yeniSifre
+            // 
+            this.txt_yeniSifre.Location = new System.Drawing.Point(147, 111);
+            this.txt_yeniSifre.Name = "txt_yeniSifre";
+            this.txt_yeniSifre.Size = new System.Drawing.Size(129, 20);
+            this.txt_yeniSifre.TabIndex = 0;
+            // 
+            // txt_eskiSifre
+            // 
+            this.txt_eskiSifre.Location = new System.Drawing.Point(147, 56);
+            this.txt_eskiSifre.Name = "txt_eskiSifre";
+            this.txt_eskiSifre.Size = new System.Drawing.Size(129, 20);
+            this.txt_eskiSifre.TabIndex = 0;
             // 
             // Form5_SifreDegistirme
             // 

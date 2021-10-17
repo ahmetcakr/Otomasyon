@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACB9C963-B7A8-41C1-BC1D-C4F58B373970}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UludagOtomasyon2</RootNamespace>
+    <AssemblyName>UludagOtomasyon2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form10_HarcDurumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10_HarcDurumu.Designer.cs">
+      <DependentUpon>Form10_HarcDurumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11_KrediKartı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11_KrediKartı.Designer.cs">
+      <DependentUpon>Form11_KrediKartı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12_NotKartı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12_NotKartı.Designer.cs">
+      <DependentUpon>Form12_NotKartı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13_SınavSonuclari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13_SınavSonuclari.Designer.cs">
+      <DependentUpon>Form13_SınavSonuclari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form14_Sınavlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14_Sınavlar.Designer.cs">
+      <DependentUpon>Form14_Sınavlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form15_StajBasvuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15_StajBasvuru.Designer.cs">
+      <DependentUpon>Form15_StajBasvuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form16_StajBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16_StajBilgi.Designer.cs">
+      <DependentUpon>Form16_StajBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3_BölümBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3_BölümBilgileri.Designer.cs">
+      <DependentUpon>Form3_BölümBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_Giris.Designer.cs">
+      <DependentUpon>Form1_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_Duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Duyurular.Designer.cs">
+      <DependentUpon>Form2_Duyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4_ÖzlükBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4_ÖzlükBilgileri.Designer.cs">
+      <DependentUpon>Form4_ÖzlükBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5_SifreDegistirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_SifreDegistirme.Designer.cs">
+      <DependentUpon>Form5_SifreDegistirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6_HesKodu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6_HesKodu.Designer.cs">
+      <DependentUpon>Form6_HesKodu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7_DersAlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7_DersAlma.Designer.cs">
+      <DependentUpon>Form7_DersAlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8_DersProgramı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8_DersProgramı.Designer.cs">
+      <DependentUpon>Form8_DersProgramı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9_DönemDersleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9_DönemDersleri.Designer.cs">
+      <DependentUpon>Form9_DönemDersleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form10_HarcDurumu.resx">
+      <DependentUpon>Form10_HarcDurumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11_KrediKartı.resx">
+      <DependentUpon>Form11_KrediKartı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12_NotKartı.resx">
+      <DependentUpon>Form12_NotKartı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13_SınavSonuclari.resx">
+      <DependentUpon>Form13_SınavSonuclari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14_Sınavlar.resx">
+      <DependentUpon>Form14_Sınavlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form15_StajBasvuru.resx">
+      <DependentUpon>Form15_StajBasvuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16_StajBilgi.resx">
+      <DependentUpon>Form16_StajBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3_BölümBilgileri.resx">
+      <DependentUpon>Form3_BölümBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_Giris.resx">
+      <DependentUpon>Form1_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_Duyurular.resx">
+      <DependentUpon>Form2_Duyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4_ÖzlükBilgileri.resx">
+      <DependentUpon>Form4_ÖzlükBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_SifreDegistirme.resx">
+      <DependentUpon>Form5_SifreDegistirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6_HesKodu.resx">
+      <DependentUpon>Form6_HesKodu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7_DersAlma.resx">
+      <DependentUpon>Form7_DersAlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8_DersProgramı.resx">
+      <DependentUpon>Form8_DersProgramı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9_DönemDersleri.resx">
+      <DependentUpon>Form9_DönemDersleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

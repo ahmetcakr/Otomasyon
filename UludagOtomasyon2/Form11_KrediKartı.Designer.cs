@@ -29,6 +29,7 @@ namespace UludagOtomasyon2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form11_KrediKartı));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.kişiselBilgilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bölümBilgileriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -267,9 +268,10 @@ namespace UludagOtomasyon2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 563);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(767, 602);
             this.Name = "Form11_KrediKartı";
-            this.Text = "Form11_KrediKartı";
+            this.Text = "Kredi Kartı İle Ödeme";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

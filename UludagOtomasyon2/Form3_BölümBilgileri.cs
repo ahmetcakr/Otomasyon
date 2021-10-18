@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace UludagOtomasyon2
 {
@@ -233,6 +234,27 @@ namespace UludagOtomasyon2
         private void form16_stajBilgisi_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void linkLbl_birimTipi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Birim Tipi Web Sitesi
+
+            System.Diagnostics.Process.Start("http://www.uludag.edu.tr/gemlik");
+            linkLbl_birimTipi.LinkVisited = true;
+        }
+
+        private void linkLbl_birimAdi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Birim Adı Web Sitesi
+            // BİLGİSAYAR PROGRAMCILIĞI
+
+            if (linkLbl_birimAdi.Text == "Bilgisayar Programcılığı")
+            {
+                System.Diagnostics.Process.Start("http://www.uludag.edu.tr/gemlik/konu/view?id=296&title=bilgisayar-programciligi");
+                linkLbl_birimAdi.LinkVisited = true;
+            }
+            
         }
     }
 }

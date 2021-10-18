@@ -367,6 +367,7 @@ namespace UludagOtomasyon2
             this.linkLbl_birimTipi.TabIndex = 9;
             this.linkLbl_birimTipi.TabStop = true;
             this.linkLbl_birimTipi.Text = "Gemlik Asım Kocabıyık Meslek Yüksekokulu";
+            this.linkLbl_birimTipi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLbl_birimTipi_LinkClicked);
             // 
             // linkLbl_birimAdi
             // 
@@ -379,6 +380,7 @@ namespace UludagOtomasyon2
             this.linkLbl_birimAdi.TabIndex = 9;
             this.linkLbl_birimAdi.TabStop = true;
             this.linkLbl_birimAdi.Text = "Bilgisayar Programcılığı";
+            this.linkLbl_birimAdi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLbl_birimAdi_LinkClicked);
             // 
             // Form3_BölümBilgileri
             // 

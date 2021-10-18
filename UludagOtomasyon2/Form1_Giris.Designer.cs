@@ -86,6 +86,7 @@ namespace UludagOtomasyon2
             this.txt_Sifre.Location = new System.Drawing.Point(267, 363);
             this.txt_Sifre.Multiline = true;
             this.txt_Sifre.Name = "txt_Sifre";
+            this.txt_Sifre.PasswordChar = '*';
             this.txt_Sifre.Size = new System.Drawing.Size(251, 20);
             this.txt_Sifre.TabIndex = 10;
             // 

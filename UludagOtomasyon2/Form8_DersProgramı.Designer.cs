@@ -91,24 +91,28 @@ namespace UludagOtomasyon2
             this.bölümBilgileriToolStripMenuItem.Name = "bölümBilgileriToolStripMenuItem";
             this.bölümBilgileriToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.bölümBilgileriToolStripMenuItem.Text = "Bölüm Bilgileri";
+            this.bölümBilgileriToolStripMenuItem.Click += new System.EventHandler(this.bölümBilgileriToolStripMenuItem_Click);
             // 
             // özlükBilgileriToolStripMenuItem
             // 
             this.özlükBilgileriToolStripMenuItem.Name = "özlükBilgileriToolStripMenuItem";
             this.özlükBilgileriToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.özlükBilgileriToolStripMenuItem.Text = "Özlük Bilgileri";
+            this.özlükBilgileriToolStripMenuItem.Click += new System.EventHandler(this.özlükBilgileriToolStripMenuItem_Click);
             // 
             // şifreDeğiştirmeToolStripMenuItem
             // 
             this.şifreDeğiştirmeToolStripMenuItem.Name = "şifreDeğiştirmeToolStripMenuItem";
             this.şifreDeğiştirmeToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.şifreDeğiştirmeToolStripMenuItem.Text = "Şifre Değiştirme";
+            this.şifreDeğiştirmeToolStripMenuItem.Click += new System.EventHandler(this.şifreDeğiştirmeToolStripMenuItem_Click);
             // 
             // hESKoduToolStripMenuItem
             // 
             this.hESKoduToolStripMenuItem.Name = "hESKoduToolStripMenuItem";
             this.hESKoduToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.hESKoduToolStripMenuItem.Text = "HES Kodu";
+            this.hESKoduToolStripMenuItem.Click += new System.EventHandler(this.hESKoduToolStripMenuItem_Click);
             // 
             // öğrenimBilgileriToolStripMenuItem
             // 
@@ -134,6 +138,7 @@ namespace UludagOtomasyon2
             this.dersAlmaToolStripMenuItem.Name = "dersAlmaToolStripMenuItem";
             this.dersAlmaToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.dersAlmaToolStripMenuItem.Text = "Ders Alma";
+            this.dersAlmaToolStripMenuItem.Click += new System.EventHandler(this.dersAlmaToolStripMenuItem_Click);
             // 
             // dersProgramıToolStripMenuItem
             // 
@@ -148,6 +153,7 @@ namespace UludagOtomasyon2
             this.dönemDersleriToolStripMenuItem.Name = "dönemDersleriToolStripMenuItem";
             this.dönemDersleriToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.dönemDersleriToolStripMenuItem.Text = "Dönem Dersleri";
+            this.dönemDersleriToolStripMenuItem.Click += new System.EventHandler(this.dönemDersleriToolStripMenuItem_Click);
             // 
             // harçDurumuToolStripMenuItem
             // 
@@ -155,6 +161,7 @@ namespace UludagOtomasyon2
             this.harçDurumuToolStripMenuItem.Name = "harçDurumuToolStripMenuItem";
             this.harçDurumuToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.harçDurumuToolStripMenuItem.Text = "Harç Durumu";
+            this.harçDurumuToolStripMenuItem.Click += new System.EventHandler(this.harçDurumuToolStripMenuItem_Click);
             // 
             // krediKartıİleÖdemeToolStripMenuItem
             // 
@@ -162,6 +169,7 @@ namespace UludagOtomasyon2
             this.krediKartıİleÖdemeToolStripMenuItem.Name = "krediKartıİleÖdemeToolStripMenuItem";
             this.krediKartıİleÖdemeToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.krediKartıİleÖdemeToolStripMenuItem.Text = "Kredi Kartı İle Ödeme";
+            this.krediKartıİleÖdemeToolStripMenuItem.Click += new System.EventHandler(this.krediKartıİleÖdemeToolStripMenuItem_Click);
             // 
             // notKartıToolStripMenuItem
             // 
@@ -169,6 +177,7 @@ namespace UludagOtomasyon2
             this.notKartıToolStripMenuItem.Name = "notKartıToolStripMenuItem";
             this.notKartıToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.notKartıToolStripMenuItem.Text = "Not Kartı";
+            this.notKartıToolStripMenuItem.Click += new System.EventHandler(this.notKartıToolStripMenuItem_Click);
             // 
             // sınavSonuçlarıToolStripMenuItem
             // 
@@ -176,6 +185,7 @@ namespace UludagOtomasyon2
             this.sınavSonuçlarıToolStripMenuItem.Name = "sınavSonuçlarıToolStripMenuItem";
             this.sınavSonuçlarıToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.sınavSonuçlarıToolStripMenuItem.Text = "Sınav Sonuçları";
+            this.sınavSonuçlarıToolStripMenuItem.Click += new System.EventHandler(this.sınavSonuçlarıToolStripMenuItem_Click);
             // 
             // sınavlarToolStripMenuItem
             // 
@@ -183,6 +193,7 @@ namespace UludagOtomasyon2
             this.sınavlarToolStripMenuItem.Name = "sınavlarToolStripMenuItem";
             this.sınavlarToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.sınavlarToolStripMenuItem.Text = "Sınavlar";
+            this.sınavlarToolStripMenuItem.Click += new System.EventHandler(this.sınavlarToolStripMenuItem_Click);
             // 
             // stajBaşvurularıToolStripMenuItem
             // 
@@ -190,6 +201,7 @@ namespace UludagOtomasyon2
             this.stajBaşvurularıToolStripMenuItem.Name = "stajBaşvurularıToolStripMenuItem";
             this.stajBaşvurularıToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.stajBaşvurularıToolStripMenuItem.Text = "Staj Başvurularım";
+            this.stajBaşvurularıToolStripMenuItem.Click += new System.EventHandler(this.stajBaşvurularıToolStripMenuItem_Click);
             // 
             // stajBilgilerimiToolStripMenuItem
             // 
@@ -197,6 +209,7 @@ namespace UludagOtomasyon2
             this.stajBilgilerimiToolStripMenuItem.Name = "stajBilgilerimiToolStripMenuItem";
             this.stajBilgilerimiToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.stajBilgilerimiToolStripMenuItem.Text = "Staj Bilgileri Görüntüle";
+            this.stajBilgilerimiToolStripMenuItem.Click += new System.EventHandler(this.stajBilgilerimiToolStripMenuItem_Click);
             // 
             // duyuruToolStripMenuItem
             // 
@@ -211,8 +224,9 @@ namespace UludagOtomasyon2
             // 
             this.duyurularToolStripMenuItem.CheckOnClick = true;
             this.duyurularToolStripMenuItem.Name = "duyurularToolStripMenuItem";
-            this.duyurularToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.duyurularToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.duyurularToolStripMenuItem.Text = "Duyurular";
+            this.duyurularToolStripMenuItem.Click += new System.EventHandler(this.duyurularToolStripMenuItem_Click);
             // 
             // raporToolStripMenuItem
             // 

@@ -23,3 +23,4 @@ C:\Users\ahmet\source\repos\UludagOtomasyon2\UludagOtomasyon2\obj\Debug\UludagOt
 C:\Users\ahmet\source\repos\UludagOtomasyon2\UludagOtomasyon2\obj\Debug\UludagOtomasyon2.Form7_DersAlma.resources
 C:\Users\ahmet\source\repos\UludagOtomasyon2\UludagOtomasyon2\obj\Debug\UludagOtomasyon2.Form8_DersProgramı.resources
 C:\Users\ahmet\source\repos\UludagOtomasyon2\UludagOtomasyon2\obj\Debug\UludagOtomasyon2.Form9_DönemDersleri.resources
+C:\Users\ahmet\source\repos\UludagOtomasyon2\UludagOtomasyon2\obj\Debug\UludagOtomasyon2.Form17_YoneticiAnaSayfa.resources

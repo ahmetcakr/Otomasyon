@@ -35,10 +35,15 @@ namespace UludagOtomasyon2
         {
 
             string sorgu = "SELECT * FROM KullaniciAdiVeSifre where KullaniciAdi=@KullaniciAdi AND Sifre=@Sifre";
+
             con = new SqlConnection("Data Source=AHMETSPC;Initial Catalog=UludagUniversity;Integrated Security=true");
             cmd = new SqlCommand(sorgu, con);
+
+
             cmd.Parameters.AddWithValue("@KullaniciAdi", txt_KullanıcıAdi.Text);
             cmd.Parameters.AddWithValue("@Sifre", txt_Sifre.Text);
+
+
             con.Open();
 
             dr = cmd.ExecuteReader();

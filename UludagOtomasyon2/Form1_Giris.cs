@@ -16,6 +16,7 @@ namespace UludagOtomasyon2
     public partial class Form1_Giris : Form
     {
         Form2_Duyurular form2_Duyurular = new Form2_Duyurular();
+        Form17_YoneticiAnaSayfa form17_yoneticiAnaSayfa = new Form17_YoneticiAnaSayfa();
 
 
         public Form1_Giris()
@@ -26,40 +27,66 @@ namespace UludagOtomasyon2
 
         // VERİTABANI BAĞLANTI KISAYOLLARI
                 SqlConnection con;
+                SqlConnection con2;
                 SqlCommand cmd;
+                SqlCommand cmd2;
                 SqlDataReader dr;
+                SqlDataReader dr2;
+
+
       
 
 
         private void btn_Giris_Click(object sender, EventArgs e)
         {
 
-            string sorgu = "SELECT * FROM KullaniciAdiVeSifre where KullaniciAdi=@KullaniciAdi AND Sifre=@Sifre";
-
+            // ÖĞRENCİ GİRİŞİ SORGULAMA
+            string sorgu = "SELECT * FROM OgrKullaniciAdiVeSifre where KullaniciAdi=@KullaniciAdi AND Sifre=@Sifre";
             con = new SqlConnection("Data Source=AHMETSPC;Initial Catalog=UludagUniversity;Integrated Security=true");
             cmd = new SqlCommand(sorgu, con);
 
-
             cmd.Parameters.AddWithValue("@KullaniciAdi", txt_KullanıcıAdi.Text);
             cmd.Parameters.AddWithValue("@Sifre", txt_Sifre.Text);
-
 
             con.Open();
 
             dr = cmd.ExecuteReader();
 
+
+
+            // YÖNETİCİ GİRİŞİ SORGULAMA
+            string sorgu2 = "SELECT * FROM Ogrt_KullaniciAdiVeSifre where KullanıcıAdı=@KullanıcıAdı AND Şifre=@Şifre";
+            con2 = new SqlConnection("Data Source=AHMETSPC;Initial Catalog=UludagUniversity;Integrated Security=true");
+            cmd2 = new SqlCommand(sorgu2, con2);
+
+            cmd2.Parameters.AddWithValue("@KullanıcıAdı",txt_KullanıcıAdi.Text);
+            cmd2.Parameters.AddWithValue("@Şifre",txt_Sifre.Text);
+
+            con2.Open();
+
+            dr2 = cmd2.ExecuteReader();
+
             if (dr.Read())
             {
-                MessageBox.Show("Başarıyla Giriş Yapılmıştır");
+                MessageBox.Show("Başarıyla Öğrenci Girişi Yapılmıştır");
                 form2_Duyurular.Show();
                 this.Hide();
             }
+            else if (dr2.Read())
+            {
+                MessageBox.Show("Başarıyla Yönetici Giriş Yapılmıştır");
+                form17_yoneticiAnaSayfa.Show();
+                this.Hide();
+            }
+
+
             else
             {
                 MessageBox.Show("Kullanıcı Adı veya Şifre Yanlış");
             }
 
             con.Close();
+            con2.Close();
         }
 
 

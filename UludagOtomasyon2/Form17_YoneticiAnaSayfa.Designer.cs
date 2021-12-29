@@ -31,13 +31,15 @@ namespace UludagOtomasyon2
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form17_YoneticiAnaSayfa));
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btn_ogrtListGoster = new System.Windows.Forms.Button();
             this.dataGrid_ogretmenlerListe = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btn_ogrListGöster = new System.Windows.Forms.Button();
             this.dataGrid_ogrencilerListe = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btn_sinifListGoster = new System.Windows.Forms.Button();
             this.dataGrid_sınıflarListe = new System.Windows.Forms.DataGridView();
-            this.btn_ogrListGöster = new System.Windows.Forms.Button();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_ogretmenlerListe)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -49,6 +51,7 @@ namespace UludagOtomasyon2
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.btn_ogrtListGoster);
             this.tabPage4.Controls.Add(this.dataGrid_ogretmenlerListe);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -56,6 +59,18 @@ namespace UludagOtomasyon2
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Ogretmen Düzenle";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btn_ogrtListGoster
+            // 
+            this.btn_ogrtListGoster.BackColor = System.Drawing.Color.Silver;
+            this.btn_ogrtListGoster.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ogrtListGoster.Location = new System.Drawing.Point(574, 49);
+            this.btn_ogrtListGoster.Name = "btn_ogrtListGoster";
+            this.btn_ogrtListGoster.Size = new System.Drawing.Size(141, 35);
+            this.btn_ogrtListGoster.TabIndex = 3;
+            this.btn_ogrtListGoster.Text = "Öğretmenleri Listele";
+            this.btn_ogrtListGoster.UseVisualStyleBackColor = false;
+            this.btn_ogrtListGoster.Click += new System.EventHandler(this.btn_ogrtListGoster_Click);
             // 
             // dataGrid_ogretmenlerListe
             // 
@@ -76,6 +91,18 @@ namespace UludagOtomasyon2
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ogrenci Düzenle";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btn_ogrListGöster
+            // 
+            this.btn_ogrListGöster.BackColor = System.Drawing.Color.Silver;
+            this.btn_ogrListGöster.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ogrListGöster.Location = new System.Drawing.Point(574, 49);
+            this.btn_ogrListGöster.Name = "btn_ogrListGöster";
+            this.btn_ogrListGöster.Size = new System.Drawing.Size(130, 35);
+            this.btn_ogrListGöster.TabIndex = 1;
+            this.btn_ogrListGöster.Text = "Öğrencileri Listele";
+            this.btn_ogrListGöster.UseVisualStyleBackColor = false;
+            this.btn_ogrListGöster.Click += new System.EventHandler(this.btn_ogrListGöster_Click);
             // 
             // dataGrid_ogrencilerListe
             // 
@@ -98,6 +125,7 @@ namespace UludagOtomasyon2
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btn_sinifListGoster);
             this.tabPage1.Controls.Add(this.dataGrid_sınıflarListe);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -106,6 +134,17 @@ namespace UludagOtomasyon2
             this.tabPage1.Text = "Sınıf Düzenle";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btn_sinifListGoster
+            // 
+            this.btn_sinifListGoster.BackColor = System.Drawing.Color.Silver;
+            this.btn_sinifListGoster.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sinifListGoster.Location = new System.Drawing.Point(574, 49);
+            this.btn_sinifListGoster.Name = "btn_sinifListGoster";
+            this.btn_sinifListGoster.Size = new System.Drawing.Size(130, 35);
+            this.btn_sinifListGoster.TabIndex = 4;
+            this.btn_sinifListGoster.Text = "Sınıfları Listele";
+            this.btn_sinifListGoster.UseVisualStyleBackColor = false;
+            // 
             // dataGrid_sınıflarListe
             // 
             this.dataGrid_sınıflarListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -113,18 +152,6 @@ namespace UludagOtomasyon2
             this.dataGrid_sınıflarListe.Name = "dataGrid_sınıflarListe";
             this.dataGrid_sınıflarListe.Size = new System.Drawing.Size(522, 534);
             this.dataGrid_sınıflarListe.TabIndex = 1;
-            // 
-            // btn_ogrListGöster
-            // 
-            this.btn_ogrListGöster.BackColor = System.Drawing.Color.Silver;
-            this.btn_ogrListGöster.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ogrListGöster.Location = new System.Drawing.Point(564, 46);
-            this.btn_ogrListGöster.Name = "btn_ogrListGöster";
-            this.btn_ogrListGöster.Size = new System.Drawing.Size(130, 35);
-            this.btn_ogrListGöster.TabIndex = 1;
-            this.btn_ogrListGöster.Text = "Öğrencileri Listele";
-            this.btn_ogrListGöster.UseVisualStyleBackColor = false;
-            this.btn_ogrListGöster.Click += new System.EventHandler(this.btn_ogrListGöster_Click);
             // 
             // Form17_YoneticiAnaSayfa
             // 
@@ -159,5 +186,7 @@ namespace UludagOtomasyon2
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataGrid_sınıflarListe;
         private System.Windows.Forms.Button btn_ogrListGöster;
+        private System.Windows.Forms.Button btn_ogrtListGoster;
+        private System.Windows.Forms.Button btn_sinifListGoster;
     }
 }
